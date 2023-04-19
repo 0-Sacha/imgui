@@ -7,8 +7,9 @@ project "ImGui"
 	targetdir 	(Solution.Path.ProjectTargetDirectory)
     objdir 		(Solution.Path.ProjectObjectDirectory)
 
-	files
-	{
+	includedirs { "." }
+
+	files {
 		"imconfig.h",
 		"imgui_demo.cpp",
 		"imgui_draw.cpp",
@@ -19,5 +20,8 @@ project "ImGui"
 		"imgui.h",
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
-		"imstb_truetype.h"
+		"imstb_truetype.h",
+
+		"misc/cpp/imgui_stdlib.h",
+		"misc/cpp/imgui_stdlib.cpp"
 	}
