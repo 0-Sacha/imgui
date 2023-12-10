@@ -1,5 +1,8 @@
+
+Solution.Projects["ImGui"].Type = "StaticLib"
+
 project "ImGui"
-	kind "StaticLib"
+	kind 		(Solution.Projects["ImGui"].Type)
 	language "C++"
 	cppdialect "C++17"
 
